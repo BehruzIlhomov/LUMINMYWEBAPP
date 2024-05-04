@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./scss/main.css">
+    <link rel="stylesheet" href="./tailwind/tailwind.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="sidebar">
+        <div id="sidebarMobile" class="flex items-center w-full justify-between">
+            <img class="max-w-44 h-12" src="./Images/logo.png" alt="">
+            <img id="burgerMenuSidebar" src="./Images/burgerMenu.png" alt="">
+        </div>
+        <div id="sidebarCategories" class="flex flex-col gap-9">
+            <span class="font-normal text-sm cursor-pointer">Shop</span>
+            <span class="font-normal text-sm cursor-pointer">Help</span>
+            <span class="font-normal text-sm cursor-pointer">Blog</span>
+            <span class="font-normal text-sm cursor-pointer">Order History</span>
+            <span class="font-normal text-sm cursor-pointer">Subscriptions</span>
+            <span class="font-normal text-sm cursor-pointer">Wishlist</span>
+            <span class="font-normal text-sm cursor-pointer">My Routine</span>
+            <span class="font-normal text-sm cursor-pointer">Settings</span>
+        </div>
+    </div>
+    <div id="header" class="bg-white px-5 py-3.5 w-full">
+        <div id="innerHeader">
+            <div id="luminResponse" class="flex items-center gap-10">
+                <img id="logoLumin" class="min-w-48 h-12" src="./Images/logo.png" alt="">
+                <span id="spanCategory" class="font-normal text-sm cursor-pointer">Shop</span>
+                <span id="spanCategory" class="font-normal text-sm cursor-pointer">Help</span>
+                <span id="spanCategory" class="font-normal text-sm cursor-pointer">Blog</span>
+                <img id="burgerMenu" src="./Images/burgerMenu.png" alt="">
+            </div>
+            <div id="inpSearch" class="flex items-center">
+                <div id="innerInpSearch" class="flex items-center gap-10">
+                    <div class="flex relative">
+                        <input class="font-medium text-sm text-black" id="searchProduct" placeholder="Search"
+                            type="search">
+                        <img id="searchReplacement" src="./Images/searchBtn.png" alt="">
+                    </div>
+                    <div class="flex items-center gap-5 cursor-pointer">
+                        <img id="imgNone" src="./Images/profile.png" alt="">
+                        <span id="spanNone" class="font-normal text-sm">Account</span>
+                    </div>
+                    <div id="categoryCart" class="flex items-center gap-3 cursor-pointer">
+                        <img id="imgNone" src="./Images/Cart.png" alt="">
+                        <span id="spanNone" class="font-normal text-sm text-black">Cart</span>
+                        <span id="spanNone" class="font-normal text-sm text-gray-400 ml-3.5">NO.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="backgroundHistory">
+        <div id="innerHistory">
+            <div id="overflowCategory">
+                <span id="orderHistorySpan" style="color: var(--color-span-category);">Order History</span>
+                <span id="subscriptionsSpan">Subscriptions</span>
+                <span id="wishlistSpan">Wishlist</span>
+                <span id="routineSpan">My Routine</span>
+                <span id="settingsSpan">Settings</span>
+            </div>
+            <div id="orderDetails">
+                <div id="orderInner">
+                    <div id="textOrder" class="flex items-start gap-7 whitespace-nowrap">
+                        <div id="orderPend" class="font-medium text-sm cursor-pointer">Pending Orders</div>
+                        <div id="orderDeliver" class="font-medium text-sm cursor-pointer">Delivered Orders</div>
+                    </div>
+                </div>
+                <div id="orderHistoryData">
+                </div>
+            </div>
+            <div id="subscriptions" class="w-full px-7">
+                <div id="innerSubscriptions">Sorry data for subscriptions will be updated soon</div>
+            </div>
+            <div id="wishlist" class="w-full px-7">
+                <div id="innerWishlist">Sorry data for wishlist will be updated soon</div>
+            </div>
+            <div id="routine" class="w-full px-7">
+                <div id="innerRoutine">Sorry data for routine will be updated soon</div>
+            </div>
+            <div id="settings" class="w-full px-7">
+                <div id="innerSettings">Sorry data for settings will be updated soon</div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="../data/order-history.js"></script>
+    <script type="module" src="./index.js"></script>
+</body>
+
+</html>
+
+

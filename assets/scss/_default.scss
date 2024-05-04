@@ -1,0 +1,204 @@
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: -80%;
+    background-color: var(--color-background-history);
+    width: 80%;
+    height: 100vh;
+    border: 1px solid white;
+    gap: 1.5rem;
+    transition: left 1.5s ease;
+
+    #sidebarMobile {
+        padding: 1.5rem 1.5rem 1.5rem 2.5rem;
+    }
+
+    #sidebarCategories {
+        padding: 1.5rem 1.5rem 1.5rem 2.5rem;
+    }
+}
+
+#sidebar.show {
+    left: 0;
+}
+
+#header {
+    border-bottom: 1px solid var(--color-seperate-border);
+
+    #innerHeader {
+        display: grid;
+        grid-template-columns: 1fr auto;
+    }
+}
+
+#searchProduct {
+    width: 100%;
+    height: 30px;
+    border: 0.5px solid var(--color-text-decoration);
+    padding-left: 25px;
+}
+
+#searchProduct::placeholder {
+    color: black;
+}
+
+#backgroundHistory {
+    background-color: var(--color-background-history);
+    width: 100%;
+    padding: 28px 9.375rem;
+
+    #innerHistory {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+
+        #overflowCategory {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            gap: 2.5rem;
+
+            #orderHistorySpan,
+            #subscriptionsSpan,
+            #wishlistSpan,
+            #routineSpan,
+            #settingsSpan {
+                cursor: pointer;
+            }
+        }
+
+        #orderDetails {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 1.5rem;
+            width: 100%;
+            border: 1px solid var(--color-seperate-border);
+            padding: 28px;
+
+            #orderInner {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                #textOrder {
+                    display: flex;
+                    align-self: start;
+
+                    #orderPend {
+                        border-bottom: 1px solid var(--color-text-decoration);
+                        line-height: 30px;
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+
+                    #orderDeliver {
+                        line-height: 30px;
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            #orderHistoryData {
+                width: 100%;
+                border: 1px solid var(--color-seperate-border);
+                padding: 0 10rem 2.5rem 10rem;
+            }
+        }
+
+        #subscriptions {
+            display: none;
+        }
+
+        #wishlist {
+            display: none;
+        }
+
+        #routine {
+            display: none;
+        }
+
+        #settings {
+            display: none;
+        }
+
+    }
+}
+
+#mainProductContainer {
+    width: 100%;
+    max-width: 1920px;
+    padding: 28px 56px;
+
+    #innerProductContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        #discount {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        #exampleOffers {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.5rem;
+
+            #recommendation {
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 27px;
+            }
+
+            p {
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 22.5px;
+
+                span {
+                    font-size: 15px;
+                    font-weight: 700;
+                    line-height: 22.5px;
+                }
+            }
+        }
+
+        #addToCart {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 10px;
+
+            span {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                white-space: nowrap;
+            }
+
+            button {
+                background-color: var(--color-cart-add);
+                min-width: 150px;
+                height: 43px;
+                border: none;
+                color: white;
+                font-family: Poppins;
+                font-size: 13px;
+                font-weight: 500;
+                line-height: 19.5px;
+            }
+        }
+    }
+}
+
+
+
+

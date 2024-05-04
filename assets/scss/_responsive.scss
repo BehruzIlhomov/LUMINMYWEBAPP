@@ -1,0 +1,140 @@
+#header {
+
+    #innerHeader {
+
+        #luminResponse {
+
+            @media (max-width: 1000px) {
+                gap: 20px;
+            }
+
+            #logoLumin {
+                @media (max-width: 1000px) {
+                    min-width: 160px;
+                    height: 40px;
+                    order: 2;
+                }
+            }
+
+            #burgerMenu {
+                display: none;
+
+                @media (max-width: 1000px) {
+                    display: block;
+                    order: 1;
+                }
+            }
+
+            #spanNone {
+                @media (max-width: 1000px) {
+                    display: none;
+                }
+            }
+
+            #spanCategory {
+                @media (max-width: 1000px) {
+                    display: none;
+                }
+            }
+        }
+
+        #inpSearch {
+            #innerInpSearch {
+
+                @media (max-width: 1000px) {
+                    gap: 1.5rem;
+                }
+
+                #spanNone {
+                    @media (max-width: 1000px) {
+                        display: none;
+                    }
+                }
+
+                #searchProduct {
+                    @media (max-width: 1000px) {
+                        display: none;
+                    }
+                }
+
+                #searchReplacement {
+                    display: none;
+
+                    @media (max-width: 1000px) {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#backgroundHistory {
+
+    @media (max-width: 1000px) {
+        padding: 28px 3.1875rem;
+    }
+
+    #innerHistory {
+
+        #overflowCategory {
+
+            @media (max-width: 1000px) {
+                display: none;
+            }
+        }
+    }
+}
+
+#mainProductContainer {
+
+    #innerProductContainer {
+
+        @media (max-width: 1000px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+
+        #exampleOffers {
+
+            @media (max-width: 1000px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        #discount {
+
+            img {
+
+                @media (max-width: 1000px) {
+                    height: 120px;
+                    width: 120px;
+                }
+            }
+
+            #imgOne {
+
+                @media (max-width: 1000px) {
+                    min-width: 86px;
+                    height: 81px;
+                }
+            }
+        }
+
+        #addToCart {
+
+            @media (max-width: 1000px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+}
+
+
+

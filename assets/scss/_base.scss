@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+html {
+    font-size: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    outline: none;
+}
+
+body {
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    overflow: hidden;
+    color: var(--color-text);
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+    height: 100dvh;
+
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+a {
+    padding: 0;
+    margin: 0;
+    color: var(--color-text);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    outline: none;
+
+    &:hover {
+        color: unset;
+    }
+}
+
+p {
+    line-height: 1.4;
+    font-size: 14px;
+}
+
+button {
+    outline: none;
+    border: none;
+    border: transparent;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+label {
+    display: inline-flex;
+    margin-bottom: 5px;
+    color: var(--color-text-light);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+input {
+    text-decoration: none;
+    outline: none;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--color-main);
+}
+
+img {
+    max-width: 100%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.custom-view-transition {
+    view-transition-name: custom-view-transition;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+}
+
+@keyframes fade-out {
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes slide-from-right {
+    from {
+        transform: translateX(30px);
+    }
+}
+
+@keyframes slide-to-left {
+    to {
+        transform: translateX(-30px);
+    }
+}
+
+
+
+
+
