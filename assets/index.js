@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         addToCart.innerHTML = `
         <span>Anti-wrinkle Balm <p>N5000</p></span>
-        <button>Add to Cart</button>
+        <button id="addCartBtn">Add to Cart</button>
         `
 
         exampleOffers.innerHTML = `
@@ -101,12 +101,12 @@ document.addEventListener("DOMContentLoaded", function () {
             img1.src = moistureBalm;
             img1.alt = "Moisture Balm";
             discount.appendChild(img1);
-        
+
             const plusSign = document.createElement("span");
             plusSign.textContent = "+";
             plusSign.style.fontSize = "48px";
             discount.appendChild(plusSign);
-        
+
             const img2 = document.createElement("img");
             img2.src = antiWrinkle;
             img2.alt = "Anti Wrinkle";
@@ -119,13 +119,44 @@ document.addEventListener("DOMContentLoaded", function () {
         mainProductContainer.appendChild(innerProductContainer);
         document.body.appendChild(mainProductContainer);
     })();
+
+    (function frequentlItems() {
+        const addCartBtn = document.getElementById("addCartBtn");
+        const orderHistoryData = document.getElementById("orderHistoryData");
+
+        addCartBtn.addEventListener("click", function () {
+            const newCartItem = document.createElement("div");
+            newCartItem.id = "cart-item";
+
+            newCartItem.innerHTML = `
+            <div id="cartItem-inner">
+                <div id="productData">
+                    <div id="moistureBalm">
+                        <img src="./Images/moisture-balm.png">
+                    </div>
+                    <div id="moistureInfo">
+                        <button>ONE TIME PURCHASE</button>
+                        <span>MOISTURISING BALM</span>
+                        <p>N12,000</p>
+                        <p>
+                            Box include: 
+                            <br>
+                            Moisturising Balm 
+                        </p>
+                        <button>PENDING<button>
+                    </div>
+                </div>
+                <div id="productRemove">
+                    <img src="./Images/delete.png">
+                    <span>VIEW DETAILS</span>
+                </div>
+            </div>
+            `
+
+            orderHistoryData.appendChild(newCartItem);
+
+            const mainProductContainer = document.getElementById("mainProductContainer");
+            mainProductContainer.style.display = "none";
+        });
+    })();
 });
-
-
-
-
-
-
-
-
-
