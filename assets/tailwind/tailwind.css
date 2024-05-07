@@ -951,7 +951,90 @@ input::-webkit-inner-spin-button {
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  padding: 0 10rem 2.5rem 10rem;
+  padding: 2.5rem 10rem 2.5rem 10rem;
+}
+
+#backgroundHistory #innerHistory #orderDetails #orderHistoryData #cart-item {
+  width: 100%;
+}
+
+#backgroundHistory #innerHistory #orderDetails #orderHistoryData #cart-item #cartItem-inner {
+  border: 0.5px solid var(--color-seperate-border);
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#backgroundHistory #innerHistory #orderDetails #orderHistoryData #cart-item #cartItem-inner #productData {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#backgroundHistory #innerHistory #orderDetails #orderHistoryData #cart-item #cartItem-inner #productData #moistureInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+#backgroundHistory #innerHistory #orderDetails #orderHistoryData #cart-item #cartItem-inner #productData #moistureInfo #singlePurchase {
+  min-width: 131px;
+  height: 18px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #000000;
+  background-color: #C4C4C4;
+}
+
+#backgroundHistory #innerHistory #orderDetails #orderHistoryData #cart-item #cartItem-inner #productData #moistureInfo #topDataMoisture {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5px;
+}
+
+#backgroundHistory #innerHistory #orderDetails #orderHistoryData #cart-item #cartItem-inner #productData #moistureInfo span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #000000;
+}
+
+#backgroundHistory #innerHistory #orderDetails #orderHistoryData #cart-item #cartItem-inner #productData #moistureInfo #inclusion {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+#backgroundHistory #innerHistory #orderDetails #orderHistoryData #cart-item #cartItem-inner #productData #moistureInfo p {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 15px;
+}
+
+#backgroundHistory #innerHistory #orderDetails #orderHistoryData #cart-item #cartItem-inner #productData #moistureInfo #orderType {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  background: #C4C4C4;
+  min-width: 65px;
+  height: 19px;
+}
+
+#backgroundHistory #innerHistory #orderDetails #orderHistoryData #cart-item #cartItem-inner #productRemove {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5.5rem;
+}
+
+#backgroundHistory #innerHistory #orderDetails #orderHistoryData #cart-item #cartItem-inner #productRemove span {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #000000;
 }
 
 #backgroundHistory #innerHistory #subscriptions {

@@ -120,9 +120,21 @@ document.addEventListener("DOMContentLoaded", function () {
         document.body.appendChild(mainProductContainer);
     })();
 
-    (function frequentlItems() {
-        const addCartBtn = document.getElementById("addCartBtn");
+    (function frequentItems() {
         const orderHistoryData = document.getElementById("orderHistoryData");
+
+        orderHistoryData.addEventListener("click", function (event) {
+            if (event.target.id === "delete") {
+                const cartItem = event.target.closest("#cart-item");
+                if (cartItem) {
+                    cartItem.style.display = "none";
+                    const mainProductContainer = document.getElementById("mainProductContainer");
+                    mainProductContainer.style.display = "block";
+                }
+            }
+        });
+
+        const addCartBtn = document.getElementById("addCartBtn");
 
         addCartBtn.addEventListener("click", function () {
             const newCartItem = document.createElement("div");
@@ -135,19 +147,21 @@ document.addEventListener("DOMContentLoaded", function () {
                         <img src="./Images/moisture-balm.png">
                     </div>
                     <div id="moistureInfo">
-                        <button>ONE TIME PURCHASE</button>
-                        <span>MOISTURISING BALM</span>
-                        <p>N12,000</p>
+                        <div id="topDataMoisture">
+                            <button id="singlePurchase">ONE TIME PURCHASE</button>
+                            <span>MOISTURISING BALM</span>
+                            <p id="inclusion">N12,000</p>
+                        </div>
                         <p>
                             Box include: 
                             <br>
                             Moisturising Balm 
                         </p>
-                        <button>PENDING<button>
+                        <button id="orderType">PENDING</button>
                     </div>
                 </div>
                 <div id="productRemove">
-                    <img src="./Images/delete.png">
+                    <img id="delete" src="./Images/delete.png">
                     <span>VIEW DETAILS</span>
                 </div>
             </div>
@@ -159,4 +173,5 @@ document.addEventListener("DOMContentLoaded", function () {
             mainProductContainer.style.display = "none";
         });
     })();
+
 });
